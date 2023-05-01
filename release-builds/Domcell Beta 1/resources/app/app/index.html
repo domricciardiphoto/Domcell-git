@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://www.pcrichard.com/on/demandware.static/Sites-PCRichard-Site/-/default/dwea3350e6/images/favicons/favicon-48.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery.js"></script>
+    <link src=".badges-beta6.2023.css" type="css">
+    <title>Domcell 2023</title>
+</head>
+
+<style>
+    body {
+        background-color: #000;
+        padding: 0px;
+        margin: 0px;
+        color: #fff;
+    }
+
+    .container {
+    width: 95%;
+    margin-left: 3%;
+    min-height: 500px;
+    }
+
+    .header {
+        width: 103.3%;
+        position: relative;
+        min-height: 25px;
+        background-color: forestgreen;
+        padding-top: 5px;
+        padding-bottom: 5px;
+       
+    }
+
+    .tagline {
+        width: 100%; 
+        position: relative;
+        font-size: 0.7rem;
+        padding: 5px;
+        margin-bottom: 7px;
+        padding-left: 3%;
+
+    }
+
+    .menu {
+        width: auto;
+        float: left;
+        background-color: #fff;
+        color: #000;
+        border-radius: 3px;
+        padding: 5px;
+        font-size: 0.8rem;
+        text-align: center;
+        margin-left: 5px;
+
+    }
+
+    .menu:hover {
+     background-color: forestgreen;
+     color: #fff;      
+    }
+
+    .breaker {
+        background-color: transparent;
+        color: #fff;
+        text-align: left;
+        width: auto;
+    }
+
+    .version {
+        color: yellow;
+    }
+
+    .customsearch {
+    width: 80%;
+    margin-top: -6px;
+    min-height: 24px;
+    font-size: 0.875rem;
+    float: left;
+}
+
+.pcrsearch , .googlesearch {
+    width: 4%;
+}
+
+.page {
+    width: 96.5%;
+    float: left;
+}
+
+.sidemenu {
+    width: 2.5%;
+    float: left;
+
+    height: 100%;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 9;
+}
+
+.saying {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+
+.gearicon {position:absolute;bottom: 0px; width: 100%; height: 100%;  max-height: 60px; max-width: 50px; cursor: pointer;}.updatetext {font-size: 0.59rem;color: #fff;text-align: center; width: 100%;margin-left: 4px;margin-bottom: 7px;}.gearicon svg {width: 100%; max-height: 35px; margin-left: 5px; cursor: pointer;}
+
+svg {
+transition: transform .7s ease-in-out;
+}
+
+.gearicon svg:hover {
+transform: rotate(360deg);
+}
+
+.lines {
+    width: 98%;
+    float: left;
+    text-align: left;
+    margin-left: 2%;
+    color: #FFF;
+    margin-top: 1%;
+}
+
+.lines50 {
+    width: 48%;
+    float: left;
+    min-height: 541px;
+    border: 1px solid #fff;
+    float: left;
+    margin-right: 1%;
+
+}
+
+.lines98 {
+    width: 97%;
+    float: left;
+    border: 1px solid #fff;
+    min-height: 300px;
+    margin-bottom: 10px;
+}
+
+.myloadedtools {
+    width: 100%;
+    border: none;
+    min-height: 1000px;
+    height: 100%;
+}
+
+.used {
+    pointer-events: none;
+}
+
+</style>
+
+
+<body>
+
+<div class="page">
+  
+    <div class="header">
+        <div class="menu breaker">&nbsp;&nbsp; Tools:</div>
+        <a href="#" title="P.C. RICHARD & SON"  ><div class="menu component" tooltoload="badgebuilder.html">Badge Builder</div></a>
+        <a href="#" title="P.C. RICHARD & SON" ><div class="menu component" tooltoload="contentbuilder.html">Content Builder</div></a>      
+        <a href="#" title="P.C. RICHARD & SON" ><div class="menu component" tooltoload="storebannersheduler.html">Store Banner Scheduler</div></a>
+
+        <div class="menu breaker">|| &nbsp;&nbsp; Search:</div>
+
+       <div class="menu breaker" style="width: 200px;"> <input class="mypcrsearch customsearch" type="text"  placeholder="PCR Site Search"></div>
+        <div class="menu pcrsearch">Search</div>
+
+
+        <div class="menu breaker" style="width: 200px;"> <input class="mysearch customsearch" type="text"  placeholder="Google Search"></div>
+<div class="menu googlesearch">Search</div>
+
+
+        <div class="menu breaker">|| &nbsp;&nbsp; Links:</div>
+
+        <a href="https://staging-na01-pcrichard.demandware.net/on/demandware.store/Sites-Site/default/ViewApplication-DisplayWelcomePage" title="SALESFORCE" target="_blank"><div class="menu">SALESFORCE (Staging)</div></a>
+
+<a href="https://development-na01-pcrichard.demandware.net/on/demandware.store/Sites-Site/default/ViewApplication-DisplayWelcomePage" title="SALESFORCE" target="_blank"><div class="menu">SALESFORCE (Dev)</div></a>
+
+<a href="https://pcr.effectuspartners.com/login" title="PIM" target="_blank"><div id="PIM" class="menu">EFFECTUS PIM</div></a>
+
+        <div class="menu breaker">|| &nbsp;&nbsp; Email:</div>
+        <a class="emailme" href="#" title="Email Me" target="_blank"><div class="menu">Feature Request</div></a>
+    </div>
+    <div class="tagline">Domcell  <span class="version">2023 Ver Beta 1 incl. badge CSS Ver Beta 6</span></div>
+    <div class="container">
+      
+<iframe class="myloadedtools" src="badgebuilder.html"></iframe>
+
+
+    </div>
+
+</div>    
+<div class="sidemenu">
+    <div class="gearicon"><svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 45.973 45.973" xml:space="preserve"><g><g><path d="M43.454,18.443h-2.437c-0.453-1.766-1.16-3.42-2.082-4.933l1.752-1.756c0.473-0.473,0.733-1.104,0.733-1.774c0-0.669-0.262-1.301-0.733-1.773l-2.92-2.917c-0.947-0.948-2.602-0.947-3.545-0.001l-1.826,1.815C30.9,6.232,29.296,5.56,27.529,5.128V2.52c0-1.383-1.105-2.52-2.488-2.52h-4.128c-1.383,0-2.471,1.137-2.471,2.52v2.607c-1.766,0.431-3.38,1.104-4.878,1.977l-1.825-1.815c-0.946-0.948-2.602-0.947-3.551-0.001L5.27,8.205C4.802,8.672,4.535,9.318,4.535,9.978c0,0.669,0.259,1.299,0.733,1.772l1.752,1.76c-0.921,1.513-1.629,3.167-2.081,4.933H2.501C1.117,18.443,0,19.555,0,20.935v4.125c0,1.384,1.117,2.471,2.501,2.471h2.438c0.452,1.766,1.159,3.43,2.079,4.943l-1.752,1.763c-0.474,0.473-0.734,1.106-0.734,1.776s0.261,1.303,0.734,1.776l2.92,2.919c0.474,0.473,1.103,0.733,1.772,0.733s1.299-0.261,1.773-0.733l1.833-1.816c1.498,0.873,3.112,1.545,4.878,1.978v2.604c0,1.383,1.088,2.498,2.471,2.498h4.128c1.383,0,2.488-1.115,2.488-2.498v-2.605c1.767-0.432,3.371-1.104,4.869-1.977l1.817,1.812c0.474,0.475,1.104,0.735,1.775,0.735c0.67,0,1.301-0.261,1.774-0.733l2.92-2.917c0.473-0.472,0.732-1.103,0.734-1.772c0-0.67-0.262-1.299-0.734-1.773l-1.75-1.77c0.92-1.514,1.627-3.179,2.08-4.943h2.438c1.383,0,2.52-1.087,2.52-2.471v-4.125C45.973,19.555,44.837,18.443,43.454,18.443z M22.976,30.85c-4.378,0-7.928-3.517-7.928-7.852c0-4.338,3.55-7.85,7.928-7.85c4.379,0,7.931,3.512,7.931,7.85C30.906,27.334,27.355,30.85,22.976,30.85z"/></g></g></svg><div class="updatetext">UPDATE</div></div><div class="updatetext"></div>
+
+
+</div>
+<div class="saying" style="display:none">Every journey begins with a single step..... but if you skip a bit, the trip can be alot more fun :)</div>
+
+<script>
+
+$(document).ready(function() {
+    var version = '2023 Ver. Beta 3.1 incl. badge CSS Ver. Beta 6'
+    $('.version').text(version)
+    $('.emailme').attr('href' , 'mailto:dom.ricciardi@pcrichard.com?Subject=Feature Request For Badge Builder&body=I am Using Badge Builder Version '+version)
+
+
+    $('.googlesearch').on('click', function() {
+if($('.mysearch').val() === '') {
+    url = 'https://www.google.com/';
+    window.open(url);
+    return false;
+} else {
+    url = 'https://www.google.com/search?q=' + $('.mysearch').val()
+    window.open(url);
+    return false;
+}
+})
+
+$('.pcrsearch').on('click', function() {
+if ($('.mypcrsearch').val() === '') {
+    url2 = 'https://www.pcrichard.com'
+    window.open(url2);
+    return false
+} else {
+    url2 = 'https://www.pcrichard.com/search?q=' + $('.mypcrsearch').val()
+    window.open(url2);
+    return false
+}
+
+})
+
+
+$('.component').on('click' , function() {
+    loadthiscomponent = $(this).attr('tooltoload')
+    $('.myloadedtools').attr('src' , loadthiscomponent)
+    return false;
+})
+
+
+
+
+})
+
+
+</script>
+
+    
+</body>
+</html>
+
+<!--
+Look at you intrepid traveler! looking all under the hood! well then here is your riddle! 
+
+   -- When is a raven like a writting desk? --
+
+if you figure it out you get a prize! well, actually no prize, but wouldnt it be fun to know! 
+Everyone enjoys a good easter egg, and tada you found one!
+Best wishes Dom
+-->
