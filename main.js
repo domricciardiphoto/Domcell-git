@@ -8,15 +8,11 @@ const {
 } = require('electron')
 
 
-const{autoUpdater} = require('electron-updater')
-
-
-
-
-
-
-
-
+const{autoUpdater} = require('electron-updater');
+const log = require('electron-log');
+log.transports.file.resolvePath = () => 'C:\Users\domin\Desktop\image-shrink\logs\main.log'
+log.info("hello , log");
+log.warn('Some problem appears');
 
 
 require('./app/index.js')
@@ -24,6 +20,7 @@ require('./app/index.js')
 
 let mainWindow
 let aboutWindow
+
 
 
 function createMainWindow() {
@@ -37,8 +34,7 @@ function createMainWindow() {
         visualEffectState: 'active',
         titleBarOverlay: true,
         allowRunningInsecureContent: true,
-        navigateOnDragDrop:true
-       
+        navigateOnDragDrop:true,
         
         
     })
@@ -99,13 +95,25 @@ app.on('ready', () => {
     Menu.setApplicationMenu(mainMenu)
     globalShortcut.register('CTRL+R', () => mainWindow.reload())
     globalShortcut.register('CTRL+D', () => mainWindow.toggleDevTools())
-
     mainWindow.on('closed', () => mainWindow = null)
-
+   
 })
 
 autoUpdater.on('update-available' , ()=> {
-    alert('theres an update!')
+log.info("update-available")
+})
+
+autoUpdater.on('checking-for-update' , ()=> {
+    log.info("checking-for-update")
+})
+
+autoUpdater.on("download-progress" ,() => {
+    log.info("download-progress")
+})
+
+
+autoUpdater.on("update-downloaded" ,() => {
+    log.info("update-downloaded")
 })
 
 const menu = [
