@@ -10,12 +10,34 @@ const {
 
 const{autoUpdater} = require('electron-updater');
 const log = require('electron-log');
-log.transports.file.resolvePath = () => 'C:\Users\domin\Desktop\image-shrink\logs\main.log'
-log.info("hello , log");
-log.warn('Some problem appears');
-
+log.transports.file.resolvePath = () => __dirname + "/logs/main.log";
+log.log("Application Version "+app.getVersion())
 
 require('./app/index.js')
+
+
+autoUpdater.on('update-available' , (info)=> {
+    log.info("update-available")
+    })
+    
+    autoUpdater.on('checking-for-update' , ()=> {
+        log.info("checking-for-update...")
+    })
+    
+    autoUpdater.on("download-progress" ,(progressTrack) => {
+        log.info('\n\ndownload progress')
+        log.info(progressTrack)
+    })
+    
+    autoUpdater.on("error" ,(err) => {
+        log.info("Error in auto-updater" + err)
+    })
+    
+    
+    autoUpdater.on("update-downloaded" ,(info) => {
+        log.info("update-downloaded")
+    })
+    
 
 
 let mainWindow
@@ -84,10 +106,6 @@ function gotogoogle() {
 
 
 
-
-
-
-
 app.on('ready', () => {
     createMainWindow()
     autoUpdater.checkForUpdatesAndNotify()
@@ -99,22 +117,9 @@ app.on('ready', () => {
    
 })
 
-autoUpdater.on('update-available' , ()=> {
-log.info("update-available")
-})
-
-autoUpdater.on('checking-for-update' , ()=> {
-    log.info("checking-for-update")
-})
-
-autoUpdater.on("download-progress" ,() => {
-    log.info("download-progress")
-})
 
 
-autoUpdater.on("update-downloaded" ,() => {
-    log.info("update-downloaded")
-})
+
 
 const menu = [
 
