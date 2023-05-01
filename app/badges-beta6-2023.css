@@ -56,5 +56,5 @@
 .custom-purple-d{fill:#a059b7}
 .custom-yellow-d{fill:#fff33e}
 .custom-orange-d{fill:#f78932}
-.banner-85da .banner_text{width:100%;position:absolute;left:0;color:#fff;top:19px;text-align:center;font-weight:600;font-size:.78rem;line-height:17px;pointer-events:none}@media only screen and (max-width:767px){.banner-85da{max-width:40px!important;width:40px!important;height:40px!important}.banner-85da .banner_text{left: 0; color: #fff; top: 13px; font-weight: 500; font-size: .42rem; line-height: 8px; }}
+.banner-85da .banner_text{width:100%;position:absolute;left:0;color:#fff;top:19px;text-align:center;font-weight:600;font-size:.7rem;line-height:15px;pointer-events:none}@media only screen and (max-width:767px){.banner-85da{max-width:40px!important;width:40px!important;height:40px!important}.banner-85da .banner_text{left: 0; color: #fff; top: 20px; font-weight: 500; font-size: .42rem; line-height: 8px; }}
 .custom-dark-d .banner_text{color: #353535 !important;}

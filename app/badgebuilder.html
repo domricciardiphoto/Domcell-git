@@ -5,9 +5,9 @@
     <meta name="description" content="Badge Builder for P.C. Richard and Son"/>
     <link src=".badges-beta6.2023.css" type="css">
     <meta charset=UTF-8>
-    <link rel="icon" href="https://www.pcrichard.com/on/demandware.static/Sites-PCRichard-Site/-/default/dwea3350e6/images/favicons/favicon-48.ico">
+    <link rel="icon" href="../assets/icons/icon_domcell_Jxp_icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="badges-beta6-2023.css" />
+    <link rel="stylesheet" href="badges-beta9-2023.css" />
     <script src="jquery.js"></script>
 <head>
 <style>
@@ -215,7 +215,7 @@ input {
 }
 
 
-.nooptions , #sleepguarantee-code , .freeassembly-code , .DOTD-code , .Assem-req-code , .Assem-optional-code , .dog-banner-color , .dogear-code , .wifi-contr , .custom-code {
+.nooptions , #sleepguarantee-code , .freeassembly-code , .DOTD-code , .Assem-req-code , .Assem-optional-code , .dog-banner-color , .dogear-code , .wifi-contr , .custom-code , .mywaterfilter {
     display: none;
 }
 
@@ -321,7 +321,10 @@ html {
 <body>
 
     <div class="container">
-   <div class="intro">LETS BUILD SOME BADGES!<br><span class="smaller">A 2023 Domcell Code Generator</span></div> 
+   <div class="intro">
+    <img src="../assets/icons/snoop.png" width="150" height="109"/>
+    
+    LETS BUILD SOME BADGES!<br><span class="smaller">A 2023 Domcell Code Generator</span></div> 
 </div>
 
 
@@ -358,6 +361,7 @@ html {
             <option value="WIFIControllable">Wifi Controlable</option>
             <option value="DOGEAR">Dog Ear</option>
             <option value="CUSTOM">Custom Circle</option>
+            <option value="WATERFILTER">Water Filter</option>
         </select>
 
 
@@ -391,6 +395,11 @@ html {
 <div class="lines nooptions">No Options just copy code</div>
 
 
+<div class="lotsofoptions" style="width: 100%; float: left; position: absolute; bottom: 0px; right: 0px; color: #fff;">
+    <img src="../assets/icons/snooplookingup.png" style="width:100px; float: right; pointer-events: none;">
+</div>
+
+
 
 <div class="dog-banner-color lines">
     <label for="color-select">Dog Ear Color Options:</label><br>
@@ -416,7 +425,7 @@ html {
         <option value="purple-d"      data-text="ULTRA PLUSH">PURPLE</option>
         <option value="yellow-d"      data-text="MEDIUM">YELLOW</option>
         <option value="orange-d"      data-text="FIRM">ORANGE</option>
-        <option value="subandsave-d"  data-text="SUBSCRIBE & SAVE 5%">BLUE WITH ICON</option>
+        <option value="subandsave-d"  data-text="SUBSCRIBE & SAVE 5%">SUBSCRIPTION WITH ICON</option>
     </select>
     <br>
     <label >Banner Text Override</label><br>
@@ -432,11 +441,20 @@ html {
    <option value="custom-purple-d" data-custom="banner-85da">PURPLE</option>
   <option value="custom-yellow-d" data-custom="banner-85da custom-dark-d">YELLOW</option>
   <option value="custom-orange-d" data-custom="banner-85da">ORANGE</option>
+  <option value="custom-green-d" data-custom="banner-85da">GREEN</option>
   </select><br><br>
   <label >Line One</label><br>
   <input type="text" id="customtext1" name="customtext1" placeholder="Line 1"><br><br>
   <label >Line Two</label><br>
   <input type="text" id="customtext2" name="customtext2" placeholder="Line 2"><br><br>
+
+  <label >Larger Text for Line 1 (For a Short work example:"FREE" to scale )</label><br>
+  <select name="largertextline1" id="largertextline1" style="width:auto">
+    <option selected value="no"data-custom="">No</option>
+    <option value="yes" data-custom="mylargertextd">Yes</option>
+  
+  </select>
+
 </div>
 
 
@@ -446,7 +464,7 @@ html {
 
 <div class="lines" style="pointer-events:none; color: yellow;">Copy this Code  Make sure you get it all!</div> 
 
-<div id="copyme" class="lines">&lt;link href="images/badges/badges-beta6-2023.css?$staticlink$" rel="stylesheet" /&gt;<br></div>
+<div id="copyme" class="lines">&lt;link href="images/badges/badges-beta9-2023.css?$staticlink$" rel="stylesheet" /&gt;<br></div>
 <button class="btn copyme_button" style="margin-top: 40px; width: 100px; margin-left: 25px;" onclick="copyContent()">Copy!</button>
 
 <div class="lines">
@@ -455,11 +473,11 @@ html {
        
 
         <div class="lines" >
-            &lt;link href="images/badges/badges-beta6-2023.css?$staticlink$" rel="stylesheet" /&gt;<br>
+            &lt;link href="images/badges/badges-beta9-2023.css?$staticlink$" rel="stylesheet" /&gt;<br>
         </div>
 
         <div class="custom-code lines" style="margin-top: 0px;">
-            &lt;div class="<span class="darktext-d">banner-85da</span>"&gt; &lt;div class="banner_text"&gt;<span class="custom1">Line 1</span>&lt;br&gt;<span class="custom2">Line 2</span>&lt;/div&gt;&lt;?xml version="1.0" encoding="utf-8"?&gt; &lt;svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 85 85" style="enable-background:new 0 0 85 85;" xml:space="preserve"&gt; &lt;circle class="<span class="custom3">custom-red-d</span>" cx="42.3" cy="42.5" r="42.3"/&gt; &lt;g&gt; &lt;/g&gt; &lt;g&gt; &lt;/g&gt; &lt;g&gt; &lt;/g&gt; &lt;g&gt; &lt;/g&gt; &lt;g&gt; &lt;/g&gt; &lt;g&gt; &lt;/g&gt; &lt;/svg&gt; &lt;/div&gt;
+            &lt;div class="<span class="darktext-d">banner-85da</span>"&gt; &lt;div class="banner_text"&gt;&lt;span class="<span class="makemebig"></span>"&gt;<span class="custom1">Line 1</span>&lt;/span&gt;&lt;br&gt;<span class="custom2">Line 2</span>&lt;/div&gt;&lt;?xml version="1.0" encoding="utf-8"?&gt; &lt;svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 85 85" style="enable-background:new 0 0 85 85;" xml:space="preserve"&gt; &lt;circle class="<span class="custom3">custom-red-d</span>" cx="42.3" cy="42.5" r="42.3"/&gt; &lt;g&gt; &lt;/g&gt; &lt;g&gt; &lt;/g&gt; &lt;g&gt; &lt;/g&gt; &lt;g&gt; &lt;/g&gt; &lt;g&gt; &lt;/g&gt; &lt;g&gt; &lt;/g&gt; &lt;/svg&gt; &lt;/div&gt;
          </div>
 
         <div id="lonngbanner-html" class="lines" style="margin-top: 0px;">
@@ -495,6 +513,12 @@ html {
 
 
         <div class="wifi-contr lines" style="margin-top: 0px;">&lt;div class="wificontrola"&gt; &lt;div class="wifi-containera wifid1a"&gt; &lt;span class="fwifi_cont"&gt;WIFI&lt;/span&gt; &lt;/div&gt;&lt;?xml version="1.0" encoding="utf-8"?&gt; &lt;svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 85 85" style="enable-background:new 0 0 85 85;" xml:space="preserve"&gt; &lt;circle class="st0_cont" cx="42.7" cy="42.7" r="41.5"/&gt; &lt;circle class="st1_cont" cx="42" cy="57.7" r="3.4"/&gt; &lt;path class="st2_cont" d="M21.3,35.6c0,0,21.7-14.6,41.4-0.1"/&gt; &lt;path class="st2_cont" d="M27.1,41.3c0,0,15.4-10.1,29,0.5"/&gt; &lt;path class="st2_cont" d="M34,48.3c0,0,7-5.9,15.7-0.1"/&gt; &lt;ellipse class="st3_cont" cx="42.7" cy="35.5" rx="40.1" ry="41.5"/&gt; &lt;text transform="matrix(0.2774 0.9255 -0.9579 0.2871 3.4948 44.7749)" class="st1_cont st4_cont st5_cont"&gt;C&lt;/text&gt; &lt;text transform="matrix(0.478 0.8397 -0.8691 0.4947 6.5231 53.6733)" class="st1_cont st4_cont st5_cont"&gt;O&lt;/text&gt; &lt;text transform="matrix(0.6609 0.7048 -0.7294 0.6841 11.6329 61.9067)" class="st1_cont st4_cont st5_cont"&gt;N&lt;/text&gt; &lt;text transform="matrix(0.8043 0.5354 -0.5542 0.8324 18.6989 68.8149)" class="st1_cont st4_cont st5_cont"&gt;T&lt;/text&gt; &lt;text transform="matrix(0.9064 0.3345 -0.3462 0.9381 26.1779 73.4087)" class="st1_cont st4_cont st5_cont"&gt;R&lt;/text&gt; &lt;text transform="matrix(0.9612 9.783373e-02 -0.1013 0.9949 35.4835 76.395)" class="st1_cont st4_cont st5_cont"&gt;O&lt;/text&gt; &lt;text transform="matrix(0.9577 -0.1276 0.132 0.9912 45.1642 76.9341)" class="st1_cont st4_cont st5_cont"&gt;L&lt;/text&gt; &lt;text transform="matrix(0.907 -0.3331 0.3447 0.9387 53.5411 75.4702)" class="st1_cont st4_cont st5_cont"&gt;L&lt;/text&gt; &lt;text transform="matrix(0.8063 -0.5324 0.551 0.8345 61.4884 72.2163)" class="st1_cont st4_cont st5_cont"&gt;A&lt;/text&gt; &lt;text transform="matrix(0.6573 -0.7082 0.7329 0.6803 69.3654 66.5395)" class="st1_cont st4_cont st5_cont"&gt;B&lt;/text&gt; &lt;text transform="matrix(0.4886 -0.8336 0.8627 0.5057 75.5831 59.2466)" class="st1_cont st4_cont st5_cont"&gt;L&lt;/text&gt; &lt;text transform="matrix(0.3092 -0.9154 0.9474 0.3201 79.5968 51.7886)" class="st1_cont st4_cont st5_cont"&gt;E&lt;/text&gt; &lt;/svg&gt;&lt;/div&gt;</div>
+
+
+
+        <div class="mywaterfilter lines" style="margin-top: 0px;">
+            &lt;div class="waterfilters2023"&gt; &lt;div class="dotdtaa textd-1ad"&gt;Genuine&lt;/div&gt;&lt;div class="dotdtaa textd-2ad"&gt;Water Filter&lt;/div&gt;&lt;?xml version="1.0" encoding="utf-8"?&gt; &lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 92.7 92.4" style="enable-background:new 0 0 92.7 92.4;" xml:space="preserve"&gt;&lt;style type="text/css"&gt;.st0{fill:#FFFFFF;stroke:#294D93;stroke-width:3;stroke-miterlimit:10;}.st1adad{fill:#294D93;}&lt;/style&gt;&lt;circle class="st0" cx="46.9" cy="46.1" r="37.8"/&gt;&lt;path class="st1" d="M47.1,15.2c-1.9,0-3.5,4.7-3,6.9c0.3,1.2,1,2.2,1,2.2c0.2,0.3,0.5,0.6,0.8,0.8c0.8,0.5,1.9,0.3,2.6-0.1c1.1-0.6,1.3-1.9,1.5-2.5C50.6,19.4,48.9,15.3,47.1,15.2z"/&gt;&lt;path class="st1" d="M41.2,21.5c-1.2,0-2.2,2.9-1.9,4.3c0.2,0.8,0.6,1.3,0.6,1.3c0.1,0.2,0.3,0.4,0.5,0.5c0.5,0.3,1.2,0.2,1.6-0.1c0.7-0.4,0.8-1.2,0.9-1.5C43.4,24.1,42.3,21.5,41.2,21.5z"/&gt;&lt;path class="st1" d="M53.2,21.3c-1.2,0-2.2,2.9-1.9,4.3c0.2,0.8,0.6,1.3,0.6,1.3c0.1,0.2,0.3,0.4,0.5,0.5c0.5,0.3,1.2,0.2,1.6-0.1c0.7-0.4,0.8-1.2,0.9-1.5C55.3,23.9,54.2,21.3,53.2,21.3z"/&gt;&lt;path class="st1adad" d="M17.8,62.4c0,0-3.6,4.1,39,0c20-0.5,20-0.5,20-0.5S65.9,81,47.6,79.7c-4.9,0.2-23.7-3.6-29.6-15.9"/&gt;&lt;g&gt;&lt;/g&gt;&lt;g&gt;&lt;/g&gt;&lt;g&gt;&lt;/g&gt;&lt;g&gt;&lt;/g&gt;&lt;g&gt;&lt;/g&gt;&lt;g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;
+        </div>
         
     </div>
 
@@ -540,7 +564,7 @@ $('.intro').delay(400).fadeOut(function() {
 
 $('#bannertypeslect').change(function() {
     var selectedbannertype = $(this).val()
-$('#lonngbanner-html ,.long-banner-color,.nooptions , #sleepguarantee-code , .wifi-contr , .custom-code , .custombox ').hide()
+$('#lonngbanner-html ,.long-banner-color,.nooptions , #sleepguarantee-code , .wifi-contr , .custom-code , .custombox , .mywaterfilter').hide()
 $('.freeassembly-code , .DOTD-code , .Assem-req-code ,.Assem-optional-code , .dogear-code , .dog-banner-color , .dogear-code').hide()
     $('.square-spot').empty().text('Square Spot').css('background-color' , '#ccc')
     $('.dogear-spot').empty().text('DogEar Badge').css('background-color' , '#ccc')
@@ -602,13 +626,21 @@ $('.freeassembly-code , .DOTD-code , .Assem-req-code ,.Assem-optional-code , .do
 
    }
 
+   if(selectedbannertype === 'WATERFILTER') {
+    $('.prodbox').fadeIn();
+    $('.nooptions').fadeIn();
+    $('.mywaterfilter').fadeIn();
+    $('.square-spot').empty().text('Square Spot').css('background-color' , '#fff')
+    $('.square-spot').html('<div class="waterfilters2023"> <div class="dotdtaa textd-1ad">Genuine</div><div class="dotdtaa textd-2ad">Water Filter</div><?xml version="1.0" encoding="utf-8"?> <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 92.7 92.4" style="enable-background:new 0 0 92.7 92.4;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;stroke:#294D93;stroke-width:3;stroke-miterlimit:10;}.st1adad{fill:#294D93;}</style><circle class="st0" cx="46.9" cy="46.1" r="37.8"/><path class="st1" d="M47.1,15.2c-1.9,0-3.5,4.7-3,6.9c0.3,1.2,1,2.2,1,2.2c0.2,0.3,0.5,0.6,0.8,0.8c0.8,0.5,1.9,0.3,2.6-0.1c1.1-0.6,1.3-1.9,1.5-2.5C50.6,19.4,48.9,15.3,47.1,15.2z"/><path class="st1" d="M41.2,21.5c-1.2,0-2.2,2.9-1.9,4.3c0.2,0.8,0.6,1.3,0.6,1.3c0.1,0.2,0.3,0.4,0.5,0.5c0.5,0.3,1.2,0.2,1.6-0.1c0.7-0.4,0.8-1.2,0.9-1.5C43.4,24.1,42.3,21.5,41.2,21.5z"/><path class="st1" d="M53.2,21.3c-1.2,0-2.2,2.9-1.9,4.3c0.2,0.8,0.6,1.3,0.6,1.3c0.1,0.2,0.3,0.4,0.5,0.5c0.5,0.3,1.2,0.2,1.6-0.1c0.7-0.4,0.8-1.2,0.9-1.5C55.3,23.9,54.2,21.3,53.2,21.3z"/><path class="st1adad" d="M17.8,62.4c0,0-3.6,4.1,39,0c20-0.5,20-0.5,20-0.5S65.9,81,47.6,79.7c-4.9,0.2-23.7-3.6-29.6-15.9"/><g></g><g></g><g></g><g></g><g></g><g></g></svg></div>')
 
+   }
 
  //-----------------------------------------------------------------------------------------
 
  if(selectedbannertype === 'DOGEAR') {
     $('.dog-banner-color').fadeIn()
     $('.prodbox').fadeIn();
+    
     $('.dogear-code').fadeIn()
     $('.dogear-spot').html('<div class="dogear-d "> <div class="banner_text_dog"></div><?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 99 98" style="enable-background:new 0 0 99 98;" xml:space="preserve"><polygon class="dogearback" points="98.9,98.2 49.5,49.1 0.2,0.1 98.9,0.1 "/><g></g><g></g><g></g><g></g><g></g><g></g></svg></div>').css('background-color' , 'transparent')
    }
@@ -676,6 +708,17 @@ $('.custom3').text($(this).val())
 $('.darktext-d').text($(this).find(':selected').data('custom'))
 $('.square-spot').html($('.custom-code').text())
 })
+
+
+$('#largertextline1').change(function() {
+    if($(this).val() === 'yes') {
+        $('.makemebig').text('lineonelargertext')
+    } else {
+        $('.makemebig').text('')
+    }
+    $('.square-spot').html($('.custom-code').text())
+})
+
 
 
 

@@ -1,19 +1,21 @@
 {
   "name": "domcell",
-  "version": "1.0.1",
+  "version": "2.0.6",
   "description": "App for PCR Badges and Content",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "package": "electron-builder -p always",
-    "package-win": "electron-packager .  --overwrite  --platform=win32 --arch=ia32 --icon=assets/icons/icon_domcell_Jxp_icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Domcell 2023 Beta 4.0\""
+    "package-win": "electron-packager .  --overwrite  --platform=win32 --arch=ia32 --icon=assets/icons/icon_domcell_Jxp_icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Domcell 2023 Beta 5.0\""
   },
   "build": {
-    "publish": [{
-      "provider": "github",
-      "owner": "domricciardiphoto",
-      "repo": "https://github.com/domricciardiphoto/Domcell/"
-    }]
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "domricciardiphoto",
+        "repo": "Domcell-git"
+      }
+    ]
   },
   "author": "Dominick Ricciardi",
   "license": "MIT",
@@ -23,7 +25,7 @@
     "electron-winstaller": "^5.1.0"
   },
   "dependencies": {
-    "electron-builder": "^23.6.0",
+    "electron-log": "^4.4.8",
     "electron-updater": "^5.3.0",
     "yarn": "^1.22.19"
   }

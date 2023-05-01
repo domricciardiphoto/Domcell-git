@@ -12,31 +12,9 @@ const{autoUpdater} = require('electron-updater');
 const log = require('electron-log');
 log.transports.file.resolvePath = () => __dirname + "/logs/main.log";
 log.log("Application Version "+app.getVersion())
-
 require('./app/index.js')
 
 
-autoUpdater.on('update-available' , (info)=> {
-    log.info("update-available")
-    })
-    
-    autoUpdater.on('checking-for-update' , ()=> {
-        log.info("checking-for-update...")
-    })
-    
-    autoUpdater.on("download-progress" ,(progressTrack) => {
-        log.info('\n\ndownload progress')
-        log.info(progressTrack)
-    })
-    
-    autoUpdater.on("error" ,(err) => {
-        log.info("Error in auto-updater" + err)
-    })
-    
-    
-    autoUpdater.on("update-downloaded" ,(info) => {
-        log.info("update-downloaded")
-    })
     
 
 
@@ -114,6 +92,29 @@ app.on('ready', () => {
     globalShortcut.register('CTRL+R', () => mainWindow.reload())
     globalShortcut.register('CTRL+D', () => mainWindow.toggleDevTools())
     mainWindow.on('closed', () => mainWindow = null)
+
+
+    autoUpdater.on('update-available' , (info)=> {
+        log.info("update-available")
+        })
+        
+        autoUpdater.on('checking-for-update' , ()=> {
+            log.info("checking-for-update...")
+        })
+        
+        autoUpdater.on("download-progress" ,(progressTrack) => {
+            log.info('\n\ndownload progress')
+            log.info(progressTrack)
+        })
+        
+        autoUpdater.on("error" ,(err) => {
+            log.info("Error in auto-updater" + err)
+        })
+        
+        
+        autoUpdater.on("update-downloaded" ,(info) => {
+            log.info("update-downloaded")
+        })
    
 })
 
