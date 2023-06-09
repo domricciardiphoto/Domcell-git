@@ -1,8 +1,15 @@
-/*PLP Badges* updated 5-2v1/
+/*PLP Badges*/
 
 
 /*Long banner Mutiple colors*/
-.width100{width:100%;float:left;text-align:center;padding-top:3px;padding-bottom:3px}.width100 p{padding-bottom:0;margin-bottom:0;font-size:.875rem;font-weight:700}.red-d{background-color:#d71920}.yellow-d{background-color:#fff33e}.orange-d{background-color:#f78932}.purple-d{background-color:#a059b7}.blue-d{background-color:#315cb8}.black-d{background-color:#000}.black-d p,.blue-d p,.orange-d p,.purple-d p,.red-d p{color:#fff}.yellow-d p{color:#353535!important}.swiper-slide .badges .width100 p{font-size:1.1rem}.subandsave-d{background-color:#034694;color:#fff;position:relative;overflow:hidden}.subandsave-d p::before{content:url('subandsave-d.svg?$staticlink$');width:6%;top:5px;position:absolute;left:52px}@media only screen and (max-width:1620px){.subandsave-d p::before{left:30px!important}}@media only screen and (max-width:1170px){.subandsave-d p::before{left:66px!important;width:5%;top:4px}}@media only screen and (max-width:767px){.subandsave-d p::before{left:12px!important}.subandsave-d p{font-size:.6rem!important}}@-moz-document url-prefix(){.subandsave-d p::before{width:5.5%!important;left:49px!important}}
+.width100{width: 100%; float: left; text-align: center; padding-top: 3px; padding-bottom: 3px}.width100 p{padding-bottom: 0; margin-bottom: 0; font-size: .875rem; font-weight: 700;}.red-d{background-color: #d71920}.yellow-d{background-color: #fff33e}.orange-d{background-color: #f78932}.purple-d{background-color: #a059b7}.blue-d{background-color: #315cb8}.black-d{background-color: #000}.black-d p,.blue-d p,.orange-d p,.purple-d p,.red-d p{color: #fff}.yellow-d p{color: #353535 !important}.swiper-slide .badges .width100 p{font-size: 1.1rem}.subandsave-d{background-color: #034694; color: #fff; position: relative; overflow: hidden;}.subandsave-d p::before{content: url('subandsave-d.svg?$staticlink$'); width: 6%; top: 5px; position: absolute; left: 52px;}
+
+@-moz-document url-prefix() {
+    .subandsave-d p::before {
+        width: 5.5% !important;
+       left: 49px !important;
+} 
+  }
 
 /*Assewmbly Required*/
 .banner-85d{width:70px;height:70px}.st031{fill:#CD2027}.banner-85d .banner_text{width:100%;position:absolute;left:0;color:#fff;top:19px;text-align:center;font-weight:600;font-size:.78rem;line-height:17px;pointer-events:none}@media only screen and (max-width:767px){.banner-85d{max-width:40px!important;width:40px!important;height:40px!important}.banner-85d .banner_text{left: 0; color: #fff; top: 13px; font-weight: 500; font-size: .42rem; line-height: 8px; }}
@@ -42,9 +49,12 @@
 
 
 /*Custom Circle*/
-.banner-85da{width:70px;height:70px}.custom-red-d{fill:#CD2027}.custom-blue-d{fill:#315cb8}.custom-black-d{fill:#000}.custom-purple-d{fill:#a059b7}.custom-yellow-d{fill:#fff33e}.custom-orange-d{fill:#f78932}.custom-green-d{fill:#008827}.lineonelargertext{font-size:1rem}.banner-85da .banner_text{width:100%;position:absolute;left:0;color:#fff;top:19px;text-align:center;font-weight:600;font-size:.7rem;line-height:15px;pointer-events:none}@media only screen and (max-width:1620px){.width100 p{font-size:.7rem}}@media only screen and (max-width:767px){.banner-85da{max-width:40px!important;width:40px!important;height:40px!important}.banner-85da .banner_text{left:0;color:#fff;top:20px;font-weight:500;font-size:.42rem;line-height:8px}.wide-banner-badge .width100 p{font-size:.5rem!important}.custom-dark-d .banner_text{color:#353535!important}}
-
-
-
-/*Water Filters*/
-.waterfilters2023{width: 70px; height: 70px;}.dotdtaa{width: 100%;position: absolute;font-size: 0.55rem;color: #294D93;text-align: center;font-weight: 600;top: 33px;}.textd-1ad{top: 21px;font-family: 'Helvetica Neue LT W05_75 Bold';font-size: 0.7rem;}}.textd-2ad{top: 32px; FONT-WEIGHT: 500 !IMPORTANT; FONT-SIZE: 0.55rem;}.textd-3{top: 42px;}@media only screen and (max-width:767px){.dealoftheday-d{max-width: 40px; max-height: 40px;}.dotdt{font-size: 0.45rem;}.textd-1{top: 8px;}.textd-2{top: 18px;}.textd-3{top: 27px;}}
+.banner-85da{width:70px;height:70px}
+.custom-red-d{fill:#CD2027}
+.custom-blue-d{fill:#315cb8}
+.custom-black-d{fill:#000}
+.custom-purple-d{fill:#a059b7}
+.custom-yellow-d{fill:#fff33e}
+.custom-orange-d{fill:#f78932}
+.banner-85da .banner_text{width:100%;position:absolute;left:0;color:#fff;top:19px;text-align:center;font-weight:600;font-size:.7rem;line-height:15px;pointer-events:none}@media only screen and (max-width:767px){.banner-85da{max-width:40px!important;width:40px!important;height:40px!important}.banner-85da .banner_text{left: 0; color: #fff; top: 20px; font-weight: 500; font-size: .42rem; line-height: 8px; }}
+.custom-dark-d .banner_text{color: #353535 !important;}

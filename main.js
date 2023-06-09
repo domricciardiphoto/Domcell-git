@@ -26,7 +26,7 @@ let aboutWindow
 function createMainWindow() {
     mainWindow = new BrowserWindow({
         title: 'Domcell Badge Builder',
-        icon: `${__dirname}./assets/icons/icon-domcell.png`,
+        icon: `${__dirname}./assets/icons/app-icon.png`,
         width: 1920,
         height: 1080,
         hasShadow: true,
@@ -54,7 +54,7 @@ function createAboutWindow() {
     
     aboutWindow = new BrowserWindow({
         title: 'About Domcell Badge Builder',
-        icon: `${__dirname}./assets/icons/icon-domcell.png`,
+        icon: `${__dirname}./assets/icons/app-icon.png`,
         width: 500,
         height: 500,
         hasShadow: true,
